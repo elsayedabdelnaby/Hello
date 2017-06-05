@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-06-05 14:32:14
+Date: 2017-06-05 14:25:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -1438,38 +1438,6 @@ CREATE TABLE `vtiger_cf_761_seq` (
 INSERT INTO `vtiger_cf_761_seq` VALUES ('5');
 
 -- ----------------------------
--- Table structure for `vtiger_cf_763`
--- ----------------------------
-DROP TABLE IF EXISTS `vtiger_cf_763`;
-CREATE TABLE `vtiger_cf_763` (
-  `cf_763id` int(11) NOT NULL AUTO_INCREMENT,
-  `cf_763` varchar(200) NOT NULL,
-  `sortorderid` int(11) DEFAULT NULL,
-  `presence` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`cf_763id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of vtiger_cf_763
--- ----------------------------
-INSERT INTO `vtiger_cf_763` VALUES ('1', 'Math', '1', '1');
-INSERT INTO `vtiger_cf_763` VALUES ('2', 'Arabic', '2', '1');
-INSERT INTO `vtiger_cf_763` VALUES ('3', 'English', '3', '1');
-
--- ----------------------------
--- Table structure for `vtiger_cf_763_seq`
--- ----------------------------
-DROP TABLE IF EXISTS `vtiger_cf_763_seq`;
-CREATE TABLE `vtiger_cf_763_seq` (
-  `id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of vtiger_cf_763_seq
--- ----------------------------
-INSERT INTO `vtiger_cf_763_seq` VALUES ('3');
-
--- ----------------------------
 -- Table structure for `vtiger_cntactivityrel`
 -- ----------------------------
 DROP TABLE IF EXISTS `vtiger_cntactivityrel`;
@@ -1800,7 +1768,7 @@ INSERT INTO `vtiger_crmentity` VALUES ('11', '1', '1', '1', 'Quotes', '', '2017-
 INSERT INTO `vtiger_crmentity` VALUES ('12', '1', '1', '1', 'Campaigns', '', '2017-04-03 08:03:56', '2017-04-03 08:14:28', null, null, '0', '1', '0', 'test campaign');
 INSERT INTO `vtiger_crmentity` VALUES ('13', '1', '1', '1', 'Invoice', '', '2017-04-03 09:07:44', '2017-04-03 12:19:26', null, null, '0', '1', '1', 'new');
 INSERT INTO `vtiger_crmentity` VALUES ('14', '1', '1', '1', 'Leads', '', '2017-04-03 09:12:25', '2017-04-03 09:12:25', null, null, '0', '1', '0', ' fff');
-INSERT INTO `vtiger_crmentity` VALUES ('15', '5', '1', '1', 'Leads', '', '2017-04-03 09:17:27', '2017-06-05 14:31:08', null, null, '0', '1', '0', ' new leaed ali');
+INSERT INTO `vtiger_crmentity` VALUES ('15', '5', '1', '1', 'Leads', '', '2017-04-03 09:17:27', '2017-06-05 12:43:58', null, null, '0', '1', '0', ' new leaed ali');
 INSERT INTO `vtiger_crmentity` VALUES ('16', '1', '1', '1', 'SalesOrder', '', '2017-04-03 12:16:15', '2017-04-03 12:17:16', null, null, '0', '1', '0', 'new sales order');
 INSERT INTO `vtiger_crmentity` VALUES ('17', '1', '1', '1', 'PurchaseOrder', '', '2017-04-03 12:18:26', '2017-04-03 12:18:26', null, null, '0', '1', '0', 'new purchase order');
 INSERT INTO `vtiger_crmentity` VALUES ('18', '1', '1', '1', 'Invoice', '', '2017-04-03 12:20:11', '2017-04-03 12:20:11', null, null, '0', '1', '0', 'ne invoice');
@@ -1914,7 +1882,7 @@ CREATE TABLE `vtiger_currencies` (
 -- ----------------------------
 INSERT INTO `vtiger_currencies` VALUES ('1', 'Albania, Leke', 'ALL', 'Lek');
 INSERT INTO `vtiger_currencies` VALUES ('2', 'Argentina, Pesos', 'ARS', '$');
-INSERT INTO `vtiger_currencies` VALUES ('3', 'Aruba, Guilders', 'AWG', 'Æ’');
+INSERT INTO `vtiger_currencies` VALUES ('3', 'Aruba, Guilders', 'AWG', 'ƒ');
 INSERT INTO `vtiger_currencies` VALUES ('4', 'Australia, Dollars', 'AUD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('5', 'Azerbaijan, New Manats', 'AZN', '???');
 INSERT INTO `vtiger_currencies` VALUES ('6', 'Bahamas, Dollars', 'BSD', '$');
@@ -1924,36 +1892,36 @@ INSERT INTO `vtiger_currencies` VALUES ('9', 'Belarus, Rubles', 'BYR', 'p.');
 INSERT INTO `vtiger_currencies` VALUES ('10', 'Belize, Dollars', 'BZD', 'BZ$');
 INSERT INTO `vtiger_currencies` VALUES ('11', 'Bermuda, Dollars', 'BMD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('12', 'Bolivia, Bolivianos', 'BOB', '$b');
-INSERT INTO `vtiger_currencies` VALUES ('13', 'China, Yuan Renminbi', 'CNY', 'Â¥');
+INSERT INTO `vtiger_currencies` VALUES ('13', 'China, Yuan Renminbi', 'CNY', '¥');
 INSERT INTO `vtiger_currencies` VALUES ('14', 'Convertible Marka', 'BAM', 'KM');
 INSERT INTO `vtiger_currencies` VALUES ('15', 'Botswana, Pulas', 'BWP', 'P');
 INSERT INTO `vtiger_currencies` VALUES ('16', 'Bulgaria, Leva', 'BGN', '??');
 INSERT INTO `vtiger_currencies` VALUES ('17', 'Brazil, Reais', 'BRL', 'R$');
-INSERT INTO `vtiger_currencies` VALUES ('18', 'Great Britain Pounds', 'GBP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('18', 'Great Britain Pounds', 'GBP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('19', 'Brunei Darussalam, Dollars', 'BND', '$');
 INSERT INTO `vtiger_currencies` VALUES ('20', 'Canada, Dollars', 'CAD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('21', 'Cayman Islands, Dollars', 'KYD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('22', 'Chile, Pesos', 'CLP', '$');
 INSERT INTO `vtiger_currencies` VALUES ('23', 'Colombia, Pesos', 'COP', '$');
-INSERT INTO `vtiger_currencies` VALUES ('24', 'Costa Rica, ColÃ³n', 'CRC', '?');
+INSERT INTO `vtiger_currencies` VALUES ('24', 'Costa Rica, Colón', 'CRC', '?');
 INSERT INTO `vtiger_currencies` VALUES ('25', 'Croatia, Kuna', 'HRK', 'kn');
 INSERT INTO `vtiger_currencies` VALUES ('26', 'Cuba, Pesos', 'CUP', '?');
 INSERT INTO `vtiger_currencies` VALUES ('27', 'Czech Republic, Koruny', 'CZK', 'K?');
-INSERT INTO `vtiger_currencies` VALUES ('28', 'Cyprus, Pounds', 'CYP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('28', 'Cyprus, Pounds', 'CYP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('29', 'Denmark, Kroner', 'DKK', 'kr');
 INSERT INTO `vtiger_currencies` VALUES ('30', 'Dominican Republic, Pesos', 'DOP', 'RD$');
 INSERT INTO `vtiger_currencies` VALUES ('31', 'East Caribbean, Dollars', 'XCD', '$');
-INSERT INTO `vtiger_currencies` VALUES ('32', 'Egypt, Pounds', 'EGP', 'Â£');
-INSERT INTO `vtiger_currencies` VALUES ('33', 'El Salvador, ColÃ³n', 'SVC', '?');
-INSERT INTO `vtiger_currencies` VALUES ('34', 'England, Pounds', 'GBP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('32', 'Egypt, Pounds', 'EGP', '£');
+INSERT INTO `vtiger_currencies` VALUES ('33', 'El Salvador, Colón', 'SVC', '?');
+INSERT INTO `vtiger_currencies` VALUES ('34', 'England, Pounds', 'GBP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('35', 'Estonia, Krooni', 'EEK', 'kr');
-INSERT INTO `vtiger_currencies` VALUES ('36', 'Euro', 'EUR', 'â‚¬');
-INSERT INTO `vtiger_currencies` VALUES ('37', 'Falkland Islands, Pounds', 'FKP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('36', 'Euro', 'EUR', '€');
+INSERT INTO `vtiger_currencies` VALUES ('37', 'Falkland Islands, Pounds', 'FKP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('38', 'Fiji, Dollars', 'FJD', '$');
-INSERT INTO `vtiger_currencies` VALUES ('39', 'Ghana, Cedis', 'GHC', 'Â¢');
-INSERT INTO `vtiger_currencies` VALUES ('40', 'Gibraltar, Pounds', 'GIP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('39', 'Ghana, Cedis', 'GHC', '¢');
+INSERT INTO `vtiger_currencies` VALUES ('40', 'Gibraltar, Pounds', 'GIP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('41', 'Guatemala, Quetzales', 'GTQ', 'Q');
-INSERT INTO `vtiger_currencies` VALUES ('42', 'Guernsey, Pounds', 'GGP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('42', 'Guernsey, Pounds', 'GGP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('43', 'Guyana, Dollars', 'GYD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('44', 'Honduras, Lempiras', 'HNL', 'L');
 INSERT INTO `vtiger_currencies` VALUES ('45', 'Hong Kong, Dollars', 'HKD', 'HK$');
@@ -1962,11 +1930,11 @@ INSERT INTO `vtiger_currencies` VALUES ('47', 'Iceland, Krona', 'ISK', 'kr');
 INSERT INTO `vtiger_currencies` VALUES ('48', 'India, Rupees', 'INR', '?');
 INSERT INTO `vtiger_currencies` VALUES ('49', 'Indonesia, Rupiahs', 'IDR', 'Rp');
 INSERT INTO `vtiger_currencies` VALUES ('50', 'Iran, Rials', 'IRR', '?');
-INSERT INTO `vtiger_currencies` VALUES ('51', 'Isle of Man, Pounds', 'IMP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('51', 'Isle of Man, Pounds', 'IMP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('52', 'Israel, New Shekels', 'ILS', '?');
 INSERT INTO `vtiger_currencies` VALUES ('53', 'Jamaica, Dollars', 'JMD', 'J$');
-INSERT INTO `vtiger_currencies` VALUES ('54', 'Japan, Yen', 'JPY', 'Â¥');
-INSERT INTO `vtiger_currencies` VALUES ('55', 'Jersey, Pounds', 'JEP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('54', 'Japan, Yen', 'JPY', '¥');
+INSERT INTO `vtiger_currencies` VALUES ('55', 'Jersey, Pounds', 'JEP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('56', 'Jordan, Dinar', 'JOD', 'JOD');
 INSERT INTO `vtiger_currencies` VALUES ('57', 'Kazakhstan, Tenge', 'KZT', '?');
 INSERT INTO `vtiger_currencies` VALUES ('58', 'Kenya, Shilling', 'KES', 'KES');
@@ -1976,7 +1944,7 @@ INSERT INTO `vtiger_currencies` VALUES ('61', 'Kuwait, Dinar', 'KWD', 'KWD');
 INSERT INTO `vtiger_currencies` VALUES ('62', 'Kyrgyzstan, Soms', 'KGS', '??');
 INSERT INTO `vtiger_currencies` VALUES ('63', 'Laos, Kips', 'LAK', '?');
 INSERT INTO `vtiger_currencies` VALUES ('64', 'Latvia, Lati', 'LVL', 'Ls');
-INSERT INTO `vtiger_currencies` VALUES ('65', 'Lebanon, Pounds', 'LBP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('65', 'Lebanon, Pounds', 'LBP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('66', 'Liberia, Dollars', 'LRD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('67', 'Switzerland Francs', 'CHF', 'CHF');
 INSERT INTO `vtiger_currencies` VALUES ('68', 'Lithuania, Litai', 'LTL', 'Lt');
@@ -1990,7 +1958,7 @@ INSERT INTO `vtiger_currencies` VALUES ('75', 'Mongolia, Tugriks', 'MNT', '?');
 INSERT INTO `vtiger_currencies` VALUES ('76', 'Mozambique, Meticais', 'MZN', 'MT');
 INSERT INTO `vtiger_currencies` VALUES ('77', 'Namibia, Dollars', 'NAD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('78', 'Nepal, Rupees', 'NPR', '?');
-INSERT INTO `vtiger_currencies` VALUES ('79', 'Netherlands Antilles, Guilders', 'ANG', 'Æ’');
+INSERT INTO `vtiger_currencies` VALUES ('79', 'Netherlands Antilles, Guilders', 'ANG', 'ƒ');
 INSERT INTO `vtiger_currencies` VALUES ('80', 'New Zealand, Dollars', 'NZD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('81', 'Nicaragua, Cordobas', 'NIO', 'C$');
 INSERT INTO `vtiger_currencies` VALUES ('82', 'Nigeria, Nairas', 'NGN', '?');
@@ -2006,7 +1974,7 @@ INSERT INTO `vtiger_currencies` VALUES ('91', 'Poland, Zlotych', 'PLN', 'z?');
 INSERT INTO `vtiger_currencies` VALUES ('92', 'Qatar, Rials', 'QAR', '?');
 INSERT INTO `vtiger_currencies` VALUES ('93', 'Romania, New Lei', 'RON', 'lei');
 INSERT INTO `vtiger_currencies` VALUES ('94', 'Russia, Rubles', 'RUB', '???');
-INSERT INTO `vtiger_currencies` VALUES ('95', 'Saint Helena, Pounds', 'SHP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('95', 'Saint Helena, Pounds', 'SHP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('96', 'Saudi Arabia, Riyals', 'SAR', '?');
 INSERT INTO `vtiger_currencies` VALUES ('97', 'Serbia, Dinars', 'RSD', '???.');
 INSERT INTO `vtiger_currencies` VALUES ('98', 'Seychelles, Rupees', 'SCR', '?');
@@ -2019,7 +1987,7 @@ INSERT INTO `vtiger_currencies` VALUES ('104', 'Sri Lanka, Rupees', 'LKR', '?');
 INSERT INTO `vtiger_currencies` VALUES ('105', 'Sweden, Kronor', 'SEK', 'kr');
 INSERT INTO `vtiger_currencies` VALUES ('106', 'Switzerland, Francs', 'CHF', 'CHF');
 INSERT INTO `vtiger_currencies` VALUES ('107', 'Suriname, Dollars', 'SRD', '$');
-INSERT INTO `vtiger_currencies` VALUES ('108', 'Syria, Pounds', 'SYP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('108', 'Syria, Pounds', 'SYP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('109', 'Taiwan, New Dollars', 'TWD', 'NT$');
 INSERT INTO `vtiger_currencies` VALUES ('110', 'Thailand, Baht', 'THB', '?');
 INSERT INTO `vtiger_currencies` VALUES ('111', 'Trinidad and Tobago, Dollars', 'TTD', 'TT$');
@@ -2028,7 +1996,7 @@ INSERT INTO `vtiger_currencies` VALUES ('113', 'Turkey, Liras', 'TRL', '?');
 INSERT INTO `vtiger_currencies` VALUES ('114', 'Tuvalu, Dollars', 'TVD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('115', 'Ukraine, Hryvnia', 'UAH', '?');
 INSERT INTO `vtiger_currencies` VALUES ('116', 'United Arab Emirates, Dirham', 'AED', 'AED');
-INSERT INTO `vtiger_currencies` VALUES ('117', 'United Kingdom, Pounds', 'GBP', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('117', 'United Kingdom, Pounds', 'GBP', '£');
 INSERT INTO `vtiger_currencies` VALUES ('118', 'United Republic of Tanzania, Shilling', 'TZS', 'TZS');
 INSERT INTO `vtiger_currencies` VALUES ('119', 'USA, Dollars', 'USD', '$');
 INSERT INTO `vtiger_currencies` VALUES ('120', 'Uruguay, Pesos', 'UYU', '$U');
@@ -2044,7 +2012,7 @@ INSERT INTO `vtiger_currencies` VALUES ('129', 'Moroccan, Dirham', 'MAD', 'DH');
 INSERT INTO `vtiger_currencies` VALUES ('130', 'Iraqi Dinar', 'IQD', 'ID');
 INSERT INTO `vtiger_currencies` VALUES ('131', 'Maldivian Ruffiya', 'MVR', 'MVR');
 INSERT INTO `vtiger_currencies` VALUES ('132', 'Ugandan Shilling', 'UGX', 'Sh');
-INSERT INTO `vtiger_currencies` VALUES ('133', 'Sudanese Pound', 'SDG', 'Â£');
+INSERT INTO `vtiger_currencies` VALUES ('133', 'Sudanese Pound', 'SDG', '£');
 INSERT INTO `vtiger_currencies` VALUES ('134', 'CFA Franc BCEAO', 'XOF', 'CFA');
 INSERT INTO `vtiger_currencies` VALUES ('135', 'CFA Franc BEAC', 'XAF', 'CFA');
 INSERT INTO `vtiger_currencies` VALUES ('136', 'Haiti, Gourde', 'HTG', 'G');
@@ -3926,7 +3894,6 @@ INSERT INTO `vtiger_def_org_field` VALUES ('13', '756', '0', '0');
 INSERT INTO `vtiger_def_org_field` VALUES ('14', '758', '0', '0');
 INSERT INTO `vtiger_def_org_field` VALUES ('20', '760', '0', '0');
 INSERT INTO `vtiger_def_org_field` VALUES ('7', '762', '0', '0');
-INSERT INTO `vtiger_def_org_field` VALUES ('7', '764', '0', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_def_org_share`
@@ -5259,7 +5226,6 @@ INSERT INTO `vtiger_field` VALUES ('13', '756', 'cf_755', 'vtiger_ticketcf', '2'
 INSERT INTO `vtiger_field` VALUES ('14', '758', 'cf_757', 'vtiger_productcf', '2', '5', 'cf_757', 'from', '1', '2', '', '100', '2', '31', '1', 'D~M', '2', '0', 'BAS', '1', '', '1');
 INSERT INTO `vtiger_field` VALUES ('20', '760', 'cf_759', 'vtiger_quotescf', '2', '1', 'cf_759', 'name', '1', '2', '', '100', '24', '49', '1', 'V~O~LE~255', '1', '2', 'BAS', '1', '', '1');
 INSERT INTO `vtiger_field` VALUES ('7', '762', 'cf_761', 'vtiger_leadscf', '2', '16', 'cf_761', 'Cars', '1', '2', null, '100', '25', '13', '1', 'V~O', '1', '0', 'BAS', '1', null, '0');
-INSERT INTO `vtiger_field` VALUES ('7', '764', 'cf_763', 'vtiger_leadscf', '2', '16', 'cf_763', 'Courses', '1', '2', '', '100', '26', '13', '1', 'V~O', '1', '0', 'BAS', '1', '', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_fieldmodulerel`
@@ -5333,7 +5299,7 @@ CREATE TABLE `vtiger_field_seq` (
 -- ----------------------------
 -- Records of vtiger_field_seq
 -- ----------------------------
-INSERT INTO `vtiger_field_seq` VALUES ('764');
+INSERT INTO `vtiger_field_seq` VALUES ('762');
 
 -- ----------------------------
 -- Table structure for `vtiger_freetagged_objects`
@@ -6329,7 +6295,7 @@ INSERT INTO `vtiger_language` VALUES ('3', 'Brazilian', 'pt_br', 'PT Brasil', '2
 INSERT INTO `vtiger_language` VALUES ('4', 'British English', 'en_gb', 'British English', '2017-02-21 10:20:06', null, '0', '1');
 INSERT INTO `vtiger_language` VALUES ('5', 'Deutsch', 'de_de', 'DE Deutsch', '2017-02-21 10:20:07', null, '0', '1');
 INSERT INTO `vtiger_language` VALUES ('6', 'Dutch', 'nl_nl', 'NL-Dutch', '2017-02-21 10:20:08', null, '0', '1');
-INSERT INTO `vtiger_language` VALUES ('7', 'Pack de langue franÃ§ais', 'fr_fr', 'Pack de langue franÃ§ais', '2017-02-21 10:20:26', null, '0', '1');
+INSERT INTO `vtiger_language` VALUES ('7', 'Pack de langue français', 'fr_fr', 'Pack de langue français', '2017-02-21 10:20:26', null, '0', '1');
 INSERT INTO `vtiger_language` VALUES ('8', 'Hungarian', 'hu_hu', 'HU Magyar', '2017-02-21 10:20:11', null, '0', '1');
 INSERT INTO `vtiger_language` VALUES ('9', 'Italian', 'it_it', 'IT Italian', '2017-02-21 10:20:11', null, '0', '1');
 INSERT INTO `vtiger_language` VALUES ('10', 'Mexican Spanish', 'es_mx', 'ES Mexico', '2017-02-21 10:20:11', null, '0', '1');
@@ -6438,16 +6404,15 @@ DROP TABLE IF EXISTS `vtiger_leadscf`;
 CREATE TABLE `vtiger_leadscf` (
   `leadid` int(19) NOT NULL DEFAULT '0',
   `cf_761` varchar(255) DEFAULT '',
-  `cf_763` varchar(255) DEFAULT '',
   PRIMARY KEY (`leadid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of vtiger_leadscf
 -- ----------------------------
-INSERT INTO `vtiger_leadscf` VALUES ('2', '', '');
-INSERT INTO `vtiger_leadscf` VALUES ('14', '', '');
-INSERT INTO `vtiger_leadscf` VALUES ('15', 'Hundai', 'Math');
+INSERT INTO `vtiger_leadscf` VALUES ('2', '');
+INSERT INTO `vtiger_leadscf` VALUES ('14', '');
+INSERT INTO `vtiger_leadscf` VALUES ('15', 'Hundai');
 
 -- ----------------------------
 -- Table structure for `vtiger_leadsource`
@@ -7237,7 +7202,6 @@ INSERT INTO `vtiger_modtracker_basic` VALUES ('68', '31', 'SMSNotifier', '1', '2
 INSERT INTO `vtiger_modtracker_basic` VALUES ('69', '31', 'SMSNotifier', '1', '2017-04-20 08:02:41', '4');
 INSERT INTO `vtiger_modtracker_basic` VALUES ('70', '32', 'Invoice', '1', '2017-04-20 08:07:43', '2');
 INSERT INTO `vtiger_modtracker_basic` VALUES ('71', '15', 'Leads', '1', '2017-06-05 12:43:58', '0');
-INSERT INTO `vtiger_modtracker_basic` VALUES ('72', '15', 'Leads', '1', '2017-06-05 14:31:08', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_modtracker_basic_seq`
@@ -7250,7 +7214,7 @@ CREATE TABLE `vtiger_modtracker_basic_seq` (
 -- ----------------------------
 -- Records of vtiger_modtracker_basic_seq
 -- ----------------------------
-INSERT INTO `vtiger_modtracker_basic_seq` VALUES ('72');
+INSERT INTO `vtiger_modtracker_basic_seq` VALUES ('71');
 
 -- ----------------------------
 -- Table structure for `vtiger_modtracker_detail`
@@ -7987,7 +7951,6 @@ INSERT INTO `vtiger_modtracker_detail` VALUES ('70', 'hdns_h_percent', null, '27
 INSERT INTO `vtiger_modtracker_detail` VALUES ('70', 'record_id', null, '32');
 INSERT INTO `vtiger_modtracker_detail` VALUES ('70', 'record_module', null, 'Invoice');
 INSERT INTO `vtiger_modtracker_detail` VALUES ('71', 'cf_761', '', 'Hundai');
-INSERT INTO `vtiger_modtracker_detail` VALUES ('72', 'cf_763', '', 'Math');
 
 -- ----------------------------
 -- Table structure for `vtiger_modtracker_relations`
@@ -9939,7 +9902,6 @@ INSERT INTO `vtiger_profile2field` VALUES ('1', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('1', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('1', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('1', '7', '762', '0', '0');
-INSERT INTO `vtiger_profile2field` VALUES ('1', '7', '764', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '6', '1', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '6', '2', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '6', '3', '0', '0');
@@ -10645,7 +10607,6 @@ INSERT INTO `vtiger_profile2field` VALUES ('2', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '7', '762', '0', '0');
-INSERT INTO `vtiger_profile2field` VALUES ('2', '7', '764', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '6', '1', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '6', '2', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '6', '3', '0', '0');
@@ -11351,7 +11312,6 @@ INSERT INTO `vtiger_profile2field` VALUES ('3', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '7', '762', '0', '0');
-INSERT INTO `vtiger_profile2field` VALUES ('3', '7', '764', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '6', '1', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '6', '2', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '6', '3', '0', '0');
@@ -12057,7 +12017,6 @@ INSERT INTO `vtiger_profile2field` VALUES ('4', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '7', '762', '0', '0');
-INSERT INTO `vtiger_profile2field` VALUES ('4', '7', '764', '0', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_profile2globalpermissions`
