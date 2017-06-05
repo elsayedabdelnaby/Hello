@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-06-05 14:25:00
+Date: 2017-06-05 14:32:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -1438,6 +1438,38 @@ CREATE TABLE `vtiger_cf_761_seq` (
 INSERT INTO `vtiger_cf_761_seq` VALUES ('5');
 
 -- ----------------------------
+-- Table structure for `vtiger_cf_763`
+-- ----------------------------
+DROP TABLE IF EXISTS `vtiger_cf_763`;
+CREATE TABLE `vtiger_cf_763` (
+  `cf_763id` int(11) NOT NULL AUTO_INCREMENT,
+  `cf_763` varchar(200) NOT NULL,
+  `sortorderid` int(11) DEFAULT NULL,
+  `presence` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`cf_763id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of vtiger_cf_763
+-- ----------------------------
+INSERT INTO `vtiger_cf_763` VALUES ('1', 'Math', '1', '1');
+INSERT INTO `vtiger_cf_763` VALUES ('2', 'Arabic', '2', '1');
+INSERT INTO `vtiger_cf_763` VALUES ('3', 'English', '3', '1');
+
+-- ----------------------------
+-- Table structure for `vtiger_cf_763_seq`
+-- ----------------------------
+DROP TABLE IF EXISTS `vtiger_cf_763_seq`;
+CREATE TABLE `vtiger_cf_763_seq` (
+  `id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of vtiger_cf_763_seq
+-- ----------------------------
+INSERT INTO `vtiger_cf_763_seq` VALUES ('3');
+
+-- ----------------------------
 -- Table structure for `vtiger_cntactivityrel`
 -- ----------------------------
 DROP TABLE IF EXISTS `vtiger_cntactivityrel`;
@@ -1768,7 +1800,7 @@ INSERT INTO `vtiger_crmentity` VALUES ('11', '1', '1', '1', 'Quotes', '', '2017-
 INSERT INTO `vtiger_crmentity` VALUES ('12', '1', '1', '1', 'Campaigns', '', '2017-04-03 08:03:56', '2017-04-03 08:14:28', null, null, '0', '1', '0', 'test campaign');
 INSERT INTO `vtiger_crmentity` VALUES ('13', '1', '1', '1', 'Invoice', '', '2017-04-03 09:07:44', '2017-04-03 12:19:26', null, null, '0', '1', '1', 'new');
 INSERT INTO `vtiger_crmentity` VALUES ('14', '1', '1', '1', 'Leads', '', '2017-04-03 09:12:25', '2017-04-03 09:12:25', null, null, '0', '1', '0', ' fff');
-INSERT INTO `vtiger_crmentity` VALUES ('15', '5', '1', '1', 'Leads', '', '2017-04-03 09:17:27', '2017-06-05 12:43:58', null, null, '0', '1', '0', ' new leaed ali');
+INSERT INTO `vtiger_crmentity` VALUES ('15', '5', '1', '1', 'Leads', '', '2017-04-03 09:17:27', '2017-06-05 14:31:08', null, null, '0', '1', '0', ' new leaed ali');
 INSERT INTO `vtiger_crmentity` VALUES ('16', '1', '1', '1', 'SalesOrder', '', '2017-04-03 12:16:15', '2017-04-03 12:17:16', null, null, '0', '1', '0', 'new sales order');
 INSERT INTO `vtiger_crmentity` VALUES ('17', '1', '1', '1', 'PurchaseOrder', '', '2017-04-03 12:18:26', '2017-04-03 12:18:26', null, null, '0', '1', '0', 'new purchase order');
 INSERT INTO `vtiger_crmentity` VALUES ('18', '1', '1', '1', 'Invoice', '', '2017-04-03 12:20:11', '2017-04-03 12:20:11', null, null, '0', '1', '0', 'ne invoice');
@@ -3894,6 +3926,7 @@ INSERT INTO `vtiger_def_org_field` VALUES ('13', '756', '0', '0');
 INSERT INTO `vtiger_def_org_field` VALUES ('14', '758', '0', '0');
 INSERT INTO `vtiger_def_org_field` VALUES ('20', '760', '0', '0');
 INSERT INTO `vtiger_def_org_field` VALUES ('7', '762', '0', '0');
+INSERT INTO `vtiger_def_org_field` VALUES ('7', '764', '0', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_def_org_share`
@@ -5226,6 +5259,7 @@ INSERT INTO `vtiger_field` VALUES ('13', '756', 'cf_755', 'vtiger_ticketcf', '2'
 INSERT INTO `vtiger_field` VALUES ('14', '758', 'cf_757', 'vtiger_productcf', '2', '5', 'cf_757', 'from', '1', '2', '', '100', '2', '31', '1', 'D~M', '2', '0', 'BAS', '1', '', '1');
 INSERT INTO `vtiger_field` VALUES ('20', '760', 'cf_759', 'vtiger_quotescf', '2', '1', 'cf_759', 'name', '1', '2', '', '100', '24', '49', '1', 'V~O~LE~255', '1', '2', 'BAS', '1', '', '1');
 INSERT INTO `vtiger_field` VALUES ('7', '762', 'cf_761', 'vtiger_leadscf', '2', '16', 'cf_761', 'Cars', '1', '2', null, '100', '25', '13', '1', 'V~O', '1', '0', 'BAS', '1', null, '0');
+INSERT INTO `vtiger_field` VALUES ('7', '764', 'cf_763', 'vtiger_leadscf', '2', '16', 'cf_763', 'Courses', '1', '2', '', '100', '26', '13', '1', 'V~O', '1', '0', 'BAS', '1', '', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_fieldmodulerel`
@@ -5299,7 +5333,7 @@ CREATE TABLE `vtiger_field_seq` (
 -- ----------------------------
 -- Records of vtiger_field_seq
 -- ----------------------------
-INSERT INTO `vtiger_field_seq` VALUES ('762');
+INSERT INTO `vtiger_field_seq` VALUES ('764');
 
 -- ----------------------------
 -- Table structure for `vtiger_freetagged_objects`
@@ -6404,15 +6438,16 @@ DROP TABLE IF EXISTS `vtiger_leadscf`;
 CREATE TABLE `vtiger_leadscf` (
   `leadid` int(19) NOT NULL DEFAULT '0',
   `cf_761` varchar(255) DEFAULT '',
+  `cf_763` varchar(255) DEFAULT '',
   PRIMARY KEY (`leadid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of vtiger_leadscf
 -- ----------------------------
-INSERT INTO `vtiger_leadscf` VALUES ('2', '');
-INSERT INTO `vtiger_leadscf` VALUES ('14', '');
-INSERT INTO `vtiger_leadscf` VALUES ('15', 'Hundai');
+INSERT INTO `vtiger_leadscf` VALUES ('2', '', '');
+INSERT INTO `vtiger_leadscf` VALUES ('14', '', '');
+INSERT INTO `vtiger_leadscf` VALUES ('15', 'Hundai', 'Math');
 
 -- ----------------------------
 -- Table structure for `vtiger_leadsource`
@@ -7202,6 +7237,7 @@ INSERT INTO `vtiger_modtracker_basic` VALUES ('68', '31', 'SMSNotifier', '1', '2
 INSERT INTO `vtiger_modtracker_basic` VALUES ('69', '31', 'SMSNotifier', '1', '2017-04-20 08:02:41', '4');
 INSERT INTO `vtiger_modtracker_basic` VALUES ('70', '32', 'Invoice', '1', '2017-04-20 08:07:43', '2');
 INSERT INTO `vtiger_modtracker_basic` VALUES ('71', '15', 'Leads', '1', '2017-06-05 12:43:58', '0');
+INSERT INTO `vtiger_modtracker_basic` VALUES ('72', '15', 'Leads', '1', '2017-06-05 14:31:08', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_modtracker_basic_seq`
@@ -7214,7 +7250,7 @@ CREATE TABLE `vtiger_modtracker_basic_seq` (
 -- ----------------------------
 -- Records of vtiger_modtracker_basic_seq
 -- ----------------------------
-INSERT INTO `vtiger_modtracker_basic_seq` VALUES ('71');
+INSERT INTO `vtiger_modtracker_basic_seq` VALUES ('72');
 
 -- ----------------------------
 -- Table structure for `vtiger_modtracker_detail`
@@ -7951,6 +7987,7 @@ INSERT INTO `vtiger_modtracker_detail` VALUES ('70', 'hdns_h_percent', null, '27
 INSERT INTO `vtiger_modtracker_detail` VALUES ('70', 'record_id', null, '32');
 INSERT INTO `vtiger_modtracker_detail` VALUES ('70', 'record_module', null, 'Invoice');
 INSERT INTO `vtiger_modtracker_detail` VALUES ('71', 'cf_761', '', 'Hundai');
+INSERT INTO `vtiger_modtracker_detail` VALUES ('72', 'cf_763', '', 'Math');
 
 -- ----------------------------
 -- Table structure for `vtiger_modtracker_relations`
@@ -9902,6 +9939,7 @@ INSERT INTO `vtiger_profile2field` VALUES ('1', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('1', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('1', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('1', '7', '762', '0', '0');
+INSERT INTO `vtiger_profile2field` VALUES ('1', '7', '764', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '6', '1', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '6', '2', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '6', '3', '0', '0');
@@ -10607,6 +10645,7 @@ INSERT INTO `vtiger_profile2field` VALUES ('2', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('2', '7', '762', '0', '0');
+INSERT INTO `vtiger_profile2field` VALUES ('2', '7', '764', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '6', '1', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '6', '2', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '6', '3', '0', '0');
@@ -11312,6 +11351,7 @@ INSERT INTO `vtiger_profile2field` VALUES ('3', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('3', '7', '762', '0', '0');
+INSERT INTO `vtiger_profile2field` VALUES ('3', '7', '764', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '6', '1', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '6', '2', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '6', '3', '0', '0');
@@ -12017,6 +12057,7 @@ INSERT INTO `vtiger_profile2field` VALUES ('4', '13', '756', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '14', '758', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '20', '760', '0', '0');
 INSERT INTO `vtiger_profile2field` VALUES ('4', '7', '762', '0', '0');
+INSERT INTO `vtiger_profile2field` VALUES ('4', '7', '764', '0', '0');
 
 -- ----------------------------
 -- Table structure for `vtiger_profile2globalpermissions`
